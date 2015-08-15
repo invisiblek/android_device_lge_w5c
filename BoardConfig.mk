@@ -24,13 +24,11 @@
 -include device/lge/msm8610-common/BoardConfigCommon.mk
 
 TARGET_KERNEL_CONFIG := w5n_global_com_defconfig
-BOARD_CUSTOM_BOOTIMG_MK := device/lge/w5/mkbootimg.mk
-
-TARGET_LIBINIT_DEFINES_FILE := device/lge/w5/init/init_w5.c
+BOARD_CUSTOM_BOOTIMG_MK := device/lge/w5c/mkbootimg.mk
 
 DEVICE_RESOLUTION := 480x800
 
-TARGET_OTA_ASSERT_DEVICE := w5,w5ds
+TARGET_OTA_ASSERT_DEVICE := w5c
 
 # Nfc
 BOARD_NFC_CHIPSET := pn547
@@ -38,7 +36,4 @@ BOARD_NFC_CHIPSET := pn547
 #TWRP
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/lge/w5
-
--include vendor/lge/w5/BoardConfigVendor.mk
+-include vendor/lge/w5c/BoardConfigVendor.mk

@@ -19,7 +19,7 @@ $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Specific overlay
-DEVICE_PACKAGE_OVERLAYS += device/lge/w5/overlay
+DEVICE_PACKAGE_OVERLAYS += device/lge/w5c/overlay
 
 PRODUCT_PACKAGES += Torch
 
@@ -30,25 +30,25 @@ PRODUCT_PACKAGES += \
     nfc_nci.pn54x.default \
     com.android.nfc_extras
 
-NFCEE_ACCESS_PATH := device/lge/w5/prebuilt/etc/nfcee_access.xml
+NFCEE_ACCESS_PATH := device/lge/w5c/prebuilt/etc/nfcee_access.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
 
 PRODUCT_COPY_FILES += \
-    device/lge/w5/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/lge/w5/prebuilt/etc/thermal-engine-8610.conf:system/etc/thermal-engine-8610.conf \
+    device/lge/w5c/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/lge/w5c/prebuilt/etc/thermal-engine-8610.conf:system/etc/thermal-engine-8610.conf \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-    device/lge/w5/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/lge/w5/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
-    device/lge/w5/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-    device/lge/w5/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
-    device/lge/w5/prebuilt/usr/keylayout/Generic-D320.kl:system/usr/keylayout/Generic-D320.kl \
-    device/lge/w5/prebuilt/usr/keylayout/Generic-D325.kl:system/usr/keylayout/Generic-D325.kl \
-    device/lge/w5/prebuilt/usr/keylayout/Generic-MS323.kl:system/usr/keylayout/Generic-MS323.kl \
-    device/lge/w5/fstab.msm8610:root/fstab.msm8610
+    device/lge/w5c/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/lge/w5c/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
+    device/lge/w5c/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+    device/lge/w5c/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
+    device/lge/w5c/prebuilt/usr/keylayout/Generic-D320.kl:system/usr/keylayout/Generic-D320.kl \
+    device/lge/w5c/prebuilt/usr/keylayout/Generic-D325.kl:system/usr/keylayout/Generic-D325.kl \
+    device/lge/w5c/prebuilt/usr/keylayout/Generic-MS323.kl:system/usr/keylayout/Generic-MS323.kl \
+    device/lge/w5c/fstab.msm8610:root/fstab.msm8610
 
 PRODUCT_LOCALES := en_US
 PRODUCT_LOCALES += hdpi
@@ -57,9 +57,9 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # OTA
 PRODUCT_COPY_FILES += \
-    device/lge/w5/prebuilt/fixup.sh:fixup.sh
+    device/lge/w5c/prebuilt/fixup.sh:fixup.sh
 
-$(call inherit-product, vendor/lge/w5/w5-vendor.mk)
+$(call inherit-product, vendor/lge/w5c/w5c-vendor.mk)
 
 # Inherit from msm8610-common
 $(call inherit-product, device/lge/msm8610-common/msm8610.mk)
