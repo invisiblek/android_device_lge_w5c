@@ -12,8 +12,6 @@
 /dev/block/platform/msm_sdcc.1/by-name/cache          	/cache       		ext4    noatime,nosuid,nodev,barrier=1,data=ordered                                     wait,check
 /dev/block/platform/msm_sdcc.1/by-name/drm            	/persist-lg  		ext4    nosuid,nodev,barrier=1,data=ordered                                             wait,check
 /dev/block/platform/msm_sdcc.1/by-name/sns            	/sns         		ext4    nosuid,nodev,barrier=1,data=ordered                                             wait,check
-/dev/block/platform/msm_sdcc.1/by-name/eri		/eri			ext4	rw,seclabel,nodev,relatime,noauto_da_alloc,data					wait
-/dev/block/platform/msm_sdcc.1/by-name/modem		/firmware		vfat	ro,relatime,uid=1000,gid=1000,fmask=0337,dmask=0227,codepage=cp437,iocharset=iso8859-1,shortname=lower,errors=remount-ro wait
 
 /dev/block/platform/msm_sdcc.1/by-name/boot         	/boot           	emmc    defaults                                                        		recoveryonly
 /dev/block/platform/msm_sdcc.1/by-name/recovery     	/recovery       	emmc    defaults                                                        		recoveryonly
