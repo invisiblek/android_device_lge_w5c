@@ -23,7 +23,7 @@
 
 -include device/lge/msm8610-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := w5n_global_com_defconfig
+TARGET_KERNEL_CONFIG := cyanogen_w5c_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/w5c/mkbootimg.mk
 
 DEVICE_RESOLUTION := 480x800
