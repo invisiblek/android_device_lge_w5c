@@ -23,6 +23,7 @@
 
 -include device/lge/msm8610-common/BoardConfigCommon.mk
 
+BOARD_CUSTOM_BOOTIMG := true
 TARGET_KERNEL_CONFIG := cyanogen_w5c_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/w5c/mkbootimg.mk
 
