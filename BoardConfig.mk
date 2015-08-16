@@ -26,6 +26,8 @@
 TARGET_KERNEL_CONFIG := cyanogen_w5c_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/w5c/mkbootimg.mk
 
+TARGET_RECOVERY_FSTAB := device/lge/w5c/fstab.msm8610
+
 DEVICE_RESOLUTION := 480x800
 
 TARGET_OTA_ASSERT_DEVICE := w5c
